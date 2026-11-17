@@ -1,0 +1,261 @@
+
+.financial-details-page {
+  min-height: 100vh;
+  background: #F7F5F2;
+  padding: 30px 7%;
+  font-family: 'Poppins', sans-serif;
+  color: #49382C;
+}
+
+.financial-brand {
+  font-size: 27px;
+  font-weight: 700;
+  color: #765B48;
+}
+
+.financial-container {
+  max-width: 760px;
+  margin: 55px auto;
+}
+
+.financial-step {
+  color: #A58A70;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.financial-container h1 {
+  font-size: 38px;
+  font-weight: 600;
+  margin: 15px 0 8px;
+}
+
+.financial-intro {
+  color: #89796C;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.financial-income-card {
+  background: #EDE3D9;
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+.financial-card-icon,
+.financial-expense-icon {
+  background: #F7F1EB;
+  color: #765B48;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.financial-income-card label {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.financial-income-card p {
+  font-size: 11px;
+  color: #89796C;
+  margin-top: 5px;
+}
+
+.financial-income-input,
+.financial-expense-input {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #E4D9CE;
+  border-radius: 9px;
+  padding: 0 12px;
+  min-width: 125px;
+  margin-left: auto;
+}
+
+.financial-income-input span,
+.financial-expense-input span {
+  color: #A58A70;
+  font-weight: 600;
+}
+
+.financial-income-input input,
+.financial-expense-input input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 7px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #49382C;
+  font: inherit;
+}
+
+.financial-expense-input input:disabled {
+  opacity: 0.55;
+}
+
+.financial-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 15px;
+}
+
+.financial-section-heading span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #A58A70;
+  font-weight: 600;
+}
+
+.financial-section-heading h2 {
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.financial-section-heading small {
+  color: #89796C;
+  font-size: 11px;
+}
+
+.financial-expense-list {
+  background: #FCFBF9;
+  border: 1px solid #E8DED4;
+  border-radius: 15px;
+  padding: 5px 20px;
+}
+
+.financial-expense-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 0;
+  border-bottom: 1px solid #F0EAE4;
+}
+
+.financial-expense-row:last-child {
+  border-bottom: none;
+}
+
+.financial-expense-icon {
+  width: 42px;
+  height: 42px;
+}
+
+.financial-expense-info strong {
+  font-size: 13px;
+  display: block;
+}
+
+.financial-expense-info span {
+  color: #89796C;
+  font-size: 10px;
+  display: block;
+  margin-top: 4px;
+}
+
+.financial-expense-input {
+  min-width: 115px;
+}
+
+.financial-total-card {
+  background: #EDE3D9;
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.financial-total-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.financial-total-card span {
+  font-size: 11px;
+  color: #765B48;
+}
+
+.financial-total-card strong {
+  font-size: 21px;
+  color: #49382C;
+}
+
+.financial-total-card .negative-balance {
+  color: #B54747;
+}
+
+.financial-continue {
+  width: 100%;
+  padding: 16px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 11px;
+  background: #765B48;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.financial-continue:hover {
+  background: #5F4738;
+}
+
+.financial-note {
+  text-align: center;
+  color: #A58A70;
+  font-size: 11px;
+  margin-top: 22px;
+}
+
+@media (max-width: 600px) {
+  .financial-container {
+    margin-top: 40px;
+  }
+
+  .financial-container h1 {
+    font-size: 29px;
+  }
+
+  .financial-income-card {
+    flex-wrap: wrap;
+  }
+
+  .financial-income-input {
+    width: 100%;
+  }
+
+  .financial-expense-row {
+    gap: 10px;
+  }
+
+  .financial-expense-info span {
+    max-width: 145px;
+  }
+
+  .financial-expense-input {
+    min-width: 90px;
+  }
+
+  .financial-total-card {
+    flex-direction: column;
+  }
+}

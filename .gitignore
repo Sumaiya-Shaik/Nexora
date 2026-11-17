@@ -1,0 +1,27 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+target/
+**/target/
+
+# Logs and local files
+*.log
+.DS_Store
+.vscode/
+
+# Archives
+*.zip
+# Keep local backend configuration private
+backend/src/main/resources/application.properties

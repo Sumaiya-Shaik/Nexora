@@ -1,0 +1,132 @@
+
+.living-page {
+  min-height: 100vh;
+  background: #F7F5F2;
+  padding: 35px 7%;
+  font-family: 'Poppins', sans-serif;
+  color: #49382C;
+}
+
+.living-brand {
+  font-size: 27px;
+  font-weight: 700;
+  color: #765B48;
+}
+
+.living-content {
+  max-width: 620px;
+  margin: 75px auto 40px;
+}
+
+.living-step {
+  color: #A58A70;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.living-content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 16px 0 10px;
+}
+
+.living-content > p {
+  color: #89796C;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.living-options {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.living-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 18px;
+  text-align: left;
+  border: 1px solid #E8DED4;
+  border-radius: 14px;
+  background: #FCFBF9;
+  color: #49382C;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.living-option:hover,
+.living-option.selected {
+  background: #F1E9E0;
+  border-color: #A58A70;
+}
+
+.living-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: #EDE3D9;
+  color: #765B48;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.living-option-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.living-option-text strong {
+  font-size: 14px;
+}
+
+.living-option-text span {
+  font-size: 12px;
+  color: #89796C;
+}
+
+.living-check {
+  margin-left: auto;
+  color: #765B48;
+  font-size: 20px;
+}
+
+.living-continue {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  border: none;
+  border-radius: 11px;
+  background: #765B48;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.living-continue:hover {
+  background: #5F4738;
+}
+
+@media (max-width: 600px) {
+  .living-content {
+    margin-top: 55px;
+  }
+
+  .living-content h1 {
+    font-size: 32px;
+  }
+
+  .living-option {
+    padding: 14px;
+  }
+}

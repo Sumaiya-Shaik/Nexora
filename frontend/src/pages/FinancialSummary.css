@@ -1,0 +1,203 @@
+
+.summary-page {
+  min-height: 100vh;
+  background: #F7F5F2;
+  padding: 30px 7%;
+  color: #49382C;
+  font-family: 'Poppins', sans-serif;
+}
+
+.summary-brand {
+  font-size: 27px;
+  font-weight: 700;
+  color: #765B48;
+}
+
+.summary-container {
+  max-width: 850px;
+  margin: 55px auto;
+}
+
+.summary-eyebrow {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #A58A70;
+}
+
+.summary-container > h1 {
+  font-size: 39px;
+  margin: 14px 0 8px;
+}
+
+.summary-intro {
+  color: #89796C;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.summary-stat {
+  background: #FCFBF9;
+  border: 1px solid #E8DED4;
+  border-radius: 15px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #A58A70;
+}
+
+.summary-stat span {
+  font-size: 12px;
+  color: #89796C;
+}
+
+.summary-stat strong {
+  font-size: 23px;
+  color: #49382C;
+}
+
+.summary-balance {
+  background: #EDE3D9;
+}
+
+.summary-stat .summary-negative {
+  color: #B54747;
+}
+
+.summary-chart-card {
+  background: #FCFBF9;
+  border: 1px solid #E8DED4;
+  border-radius: 17px;
+  padding: 27px;
+}
+
+.summary-chart-card h2 {
+  font-size: 21px;
+  margin-top: 8px;
+}
+
+.summary-chart {
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.summary-legend {
+  max-width: 500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px 20px;
+}
+
+.summary-legend > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 12px;
+  color: #89796C;
+}
+
+.summary-legend strong {
+  margin-left: auto;
+  color: #49382C;
+}
+
+.summary-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.summary-insight {
+  display: flex;
+  gap: 17px;
+  align-items: flex-start;
+  background: #EDE3D9;
+  padding: 23px;
+  border-radius: 15px;
+  margin-top: 23px;
+}
+
+.summary-insight-icon {
+  width: 43px;
+  height: 43px;
+  border-radius: 12px;
+  background: #F7F1EB;
+  color: #765B48;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.summary-insight span {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #A58A70;
+  font-weight: 600;
+}
+
+.summary-insight h3 {
+  margin: 7px 0;
+  font-size: 17px;
+}
+
+.summary-insight p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #765B48;
+}
+
+.summary-button {
+  width: 100%;
+  background: #765B48;
+  color: white;
+  border: none;
+  border-radius: 11px;
+  padding: 16px;
+  margin-top: 25px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.summary-button:hover {
+  background: #5F4738;
+}
+
+.summary-footer {
+  text-align: center;
+  font-size: 11px;
+  color: #A58A70;
+  margin-top: 25px;
+}
+
+@media (max-width: 650px) {
+  .summary-container {
+    margin-top: 40px;
+  }
+
+  .summary-container > h1 {
+    font-size: 30px;
+  }
+
+  .summary-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-legend {
+    grid-template-columns: 1fr;
+  }
+}
