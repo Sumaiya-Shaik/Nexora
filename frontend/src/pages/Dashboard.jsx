@@ -13,7 +13,7 @@ import {
 import './Dashboard.css'
 import Expenses from './Expenses'
 
-const API = 'http://localhost:8080/api/expenses'
+const API = 'https://nexora-g387.onrender.com/api/expenses'
 
 const COLORS = [
   '#7655D9',

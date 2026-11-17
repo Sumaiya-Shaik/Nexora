@@ -7,7 +7,7 @@ import {
 } from 'lucide-react'
 import './FixedExpenses.css'
 
-const API = 'http://localhost:8080/api/fixed-expenses'
+const API = 'https://nexora-g387.onrender.com/api/fixed-expenses'
 const MONTHLY_API = `${API}/monthly`
 
 const categories = [

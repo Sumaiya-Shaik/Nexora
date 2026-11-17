@@ -20,7 +20,7 @@ function Login() {
     try {
       if (isSignup) {
         const response = await axios.post(
-          'http://localhost:8080/api/auth/register',
+          'https://nexora-g387.onrender.com/api/auth/register',
           { name, email, password }
         )
 
@@ -32,7 +32,7 @@ function Login() {
 
       } else {
         const response = await axios.post(
-          'http://localhost:8080/api/auth/login',
+          'https://nexora-g387.onrender.com/api/auth/login',
           { email, password }
         )
 

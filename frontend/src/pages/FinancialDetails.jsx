@@ -128,7 +128,7 @@ function FinancialDetails() {
       setSaving(true)
 
       const response = await axios.put(
-        'http://localhost:8080/api/auth/profile',
+        'https://nexora-g387.onrender.com/api/auth/profile',
         profileData
       )
 
