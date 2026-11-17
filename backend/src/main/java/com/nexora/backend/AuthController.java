@@ -10,7 +10,9 @@ import java.util.Map;
 
 @CrossOrigin(origins = {
     "http://localhost:5173",
-    "http://localhost:5174"
+    "http://localhost:5174",
+        "https://nexora-one-weld.vercel.app"
+
 })
 @RestController
 @RequestMapping("/api/auth")
