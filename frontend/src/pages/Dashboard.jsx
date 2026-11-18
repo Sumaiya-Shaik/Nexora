@@ -171,25 +171,10 @@ function Dashboard() {
       }))
   }, [expenses])
 
-  const lineData = useMemo(() => {
-  const currentMonth = new Date().toISOString().slice(0, 7)
-  const dailyTotals = {}
-
-  expenses.forEach(item => {
-    if (!item.date || !item.date.startsWith(currentMonth)) return
-
-    const day = Number(item.date.slice(8, 10))
-    dailyTotals[day] = (dailyTotals[day] || 0) + Number(item.amount || 0)
-  })
-
-  return Object.entries(dailyTotals)
-    .map(([day, spent]) => ({
-      day: Number(day),
-      spent
-    }))
-    .sort((a, b) => a.day - b.day)
-}, [expenses])
-  
+  const lineData = [
+    { month: 'Initial expenses', spent: initialTotal },
+    { month: 'Current total', spent: totalSpent }
+  ]
 
   const budgetCategories = [
     { name: 'Accommodation', amount: Number(initialExpenses.accommodation || 0) },
@@ -385,38 +370,25 @@ function Dashboard() {
             <ResponsiveContainer width="100%" height={260}>
               <LineChart data={lineData}>
                 <CartesianGrid
-                  strokeDasharray="3 3"
-                  vertical={false}
-                  stroke="#E9E1FF"
-                />
-                <XAxis
-                  dataKey="day"
-                  axisLine={false}
-                  tickLine={false}
-                  label={{ value: 'Day of month', position: 'insideBottom', offset: -5 }}
-                />
-                <YAxis
-                  axisLine={false}
-                  tickLine={false}
-                  tickFormatter={value => `₹${value}`}
-                />
-                <Tooltip
-                  labelFormatter={day => `Day ${day}`}
-                  formatter={value => [money(value), 'Spent']}
-                />
+  strokeDasharray="3 3"
+  vertical={false}
+  stroke="#E9E1FF"
+/>
+                <XAxis dataKey="month" axisLine={false} tickLine={false} />
+                <YAxis axisLine={false} tickLine={false} />
+                <Tooltip formatter={value => money(value)} />
                 <Line
-                  type="linear"
-                  dataKey="spent"
-                  stroke="#7655D9"
-                  strokeWidth={3}
-                  dot={{ r: 4, fill: '#7655D9' }}
-                />
+  type="monotone"
+  dataKey="spent"
+  stroke="#7655D9"
+  strokeWidth={3}
+  dot={{ r: 5, fill: '#7655D9' }}
+/>
               </LineChart>
             </ResponsiveContainer>
           </div>
-
           <p className="nexora-chart-note">
-            Your actual daily spending this month.
+            Your initial expenses and additional recorded expenses.
           </p>
         </div>
 
