@@ -1,16 +1,16 @@
 
 .financial-details-page {
   min-height: 100vh;
-  background: #F7F5F2;
+  background: #F7F5FF;
   padding: 30px 7%;
   font-family: 'Poppins', sans-serif;
-  color: #49382C;
+  color: #25213B;
 }
 
 .financial-brand {
   font-size: 27px;
   font-weight: 700;
-  color: #765B48;
+  color: #7655D9;
 }
 
 .financial-container {
@@ -19,7 +19,7 @@
 }
 
 .financial-step {
-  color: #A58A70;
+  color: #7655D9;
   font-size: 11px;
   letter-spacing: 2px;
   font-weight: 600;
@@ -29,17 +29,18 @@
   font-size: 38px;
   font-weight: 600;
   margin: 15px 0 8px;
+  color: #25213B;
 }
 
 .financial-intro {
-  color: #89796C;
+  color: #77718D;
   font-size: 14px;
   line-height: 1.8;
   margin-bottom: 30px;
 }
 
 .financial-income-card {
-  background: #EDE3D9;
+  background: #E9E1FF;
   border-radius: 16px;
   padding: 22px;
   display: flex;
@@ -50,8 +51,8 @@
 
 .financial-card-icon,
 .financial-expense-icon {
-  background: #F7F1EB;
-  color: #765B48;
+  background: #F7F5FF;
+  color: #7655D9;
   width: 48px;
   height: 48px;
   border-radius: 12px;
@@ -63,11 +64,12 @@
 .financial-income-card label {
   font-weight: 600;
   font-size: 15px;
+  color: #25213B;
 }
 
 .financial-income-card p {
   font-size: 11px;
-  color: #89796C;
+  color: #77718D;
   margin-top: 5px;
 }
 
@@ -75,8 +77,8 @@
 .financial-expense-input {
   display: flex;
   align-items: center;
-  background: white;
-  border: 1px solid #E4D9CE;
+  background: #FFFFFF;
+  border: 1px solid #D9CEF8;
   border-radius: 9px;
   padding: 0 12px;
   min-width: 125px;
@@ -85,7 +87,7 @@
 
 .financial-income-input span,
 .financial-expense-input span {
-  color: #A58A70;
+  color: #7655D9;
   font-weight: 600;
 }
 
@@ -97,7 +99,7 @@
   border: none;
   outline: none;
   background: transparent;
-  color: #49382C;
+  color: #25213B;
   font: inherit;
 }
 
@@ -115,23 +117,24 @@
 .financial-section-heading span {
   font-size: 10px;
   letter-spacing: 2px;
-  color: #A58A70;
+  color: #7655D9;
   font-weight: 600;
 }
 
 .financial-section-heading h2 {
   font-size: 22px;
   margin-top: 5px;
+  color: #25213B;
 }
 
 .financial-section-heading small {
-  color: #89796C;
+  color: #77718D;
   font-size: 11px;
 }
 
 .financial-expense-list {
-  background: #FCFBF9;
-  border: 1px solid #E8DED4;
+  background: #FFFFFF;
+  border: 1px solid #E9E1FF;
   border-radius: 15px;
   padding: 5px 20px;
 }
@@ -141,7 +144,7 @@
   align-items: center;
   gap: 15px;
   padding: 16px 0;
-  border-bottom: 1px solid #F0EAE4;
+  border-bottom: 1px solid #F0ECFA;
 }
 
 .financial-expense-row:last-child {
@@ -151,15 +154,17 @@
 .financial-expense-icon {
   width: 42px;
   height: 42px;
+  background: #F0EBFF;
 }
 
 .financial-expense-info strong {
   font-size: 13px;
   display: block;
+  color: #25213B;
 }
 
 .financial-expense-info span {
-  color: #89796C;
+  color: #77718D;
   font-size: 10px;
   display: block;
   margin-top: 4px;
@@ -170,7 +175,7 @@
 }
 
 .financial-total-card {
-  background: #EDE3D9;
+  background: #E9E1FF;
   border-radius: 14px;
   padding: 20px;
   margin-top: 22px;
@@ -187,16 +192,16 @@
 
 .financial-total-card span {
   font-size: 11px;
-  color: #765B48;
+  color: #7655D9;
 }
 
 .financial-total-card strong {
   font-size: 21px;
-  color: #49382C;
+  color: #25213B;
 }
 
 .financial-total-card .negative-balance {
-  color: #B54747;
+  color: #B54769;
 }
 
 .financial-continue {
@@ -205,7 +210,7 @@
   margin-top: 25px;
   border: none;
   border-radius: 11px;
-  background: #765B48;
+  background: #7655D9;
   color: white;
   font-size: 14px;
   display: flex;
@@ -213,15 +218,16 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .financial-continue:hover {
-  background: #5F4738;
+  background: #6243C0;
 }
 
 .financial-note {
   text-align: center;
-  color: #A58A70;
+  color: #77718D;
   font-size: 11px;
   margin-top: 22px;
 }

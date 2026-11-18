@@ -1,16 +1,16 @@
 
 .living-page {
   min-height: 100vh;
-  background: #F7F5F2;
+  background: #F7F5FF;
   padding: 35px 7%;
   font-family: 'Poppins', sans-serif;
-  color: #49382C;
+  color: #25213B;
 }
 
 .living-brand {
   font-size: 27px;
   font-weight: 700;
-  color: #765B48;
+  color: #7655D9;
 }
 
 .living-content {
@@ -19,7 +19,7 @@
 }
 
 .living-step {
-  color: #A58A70;
+  color: #7655D9;
   font-size: 11px;
   letter-spacing: 2px;
   font-weight: 600;
@@ -29,10 +29,11 @@
   font-size: 40px;
   font-weight: 600;
   margin: 16px 0 10px;
+  color: #25213B;
 }
 
 .living-content > p {
-  color: #89796C;
+  color: #77718D;
   font-size: 14px;
   line-height: 1.8;
   margin-bottom: 30px;
@@ -51,26 +52,26 @@
   gap: 17px;
   padding: 18px;
   text-align: left;
-  border: 1px solid #E8DED4;
+  border: 1px solid #E9E1FF;
   border-radius: 14px;
-  background: #FCFBF9;
-  color: #49382C;
+  background: #FFFFFF;
+  color: #25213B;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .living-option:hover,
 .living-option.selected {
-  background: #F1E9E0;
-  border-color: #A58A70;
+  background: #F0EBFF;
+  border-color: #A78BFA;
 }
 
 .living-icon {
   width: 50px;
   height: 50px;
   border-radius: 12px;
-  background: #EDE3D9;
-  color: #765B48;
+  background: #E9E1FF;
+  color: #7655D9;
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -84,16 +85,17 @@
 
 .living-option-text strong {
   font-size: 14px;
+  color: #25213B;
 }
 
 .living-option-text span {
   font-size: 12px;
-  color: #89796C;
+  color: #77718D;
 }
 
 .living-check {
   margin-left: auto;
-  color: #765B48;
+  color: #7655D9;
   font-size: 20px;
 }
 
@@ -103,7 +105,7 @@
   padding: 15px;
   border: none;
   border-radius: 11px;
-  background: #765B48;
+  background: #7655D9;
   color: white;
   font-size: 14px;
   display: flex;
@@ -111,10 +113,11 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .living-continue:hover {
-  background: #5F4738;
+  background: #6243C0;
 }
 
 @media (max-width: 600px) {
