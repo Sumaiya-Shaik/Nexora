@@ -36,8 +36,7 @@
           title: 'Other Monthly Expenses',
           category: 'Other'
         }
-      ].filter(item => financialData.expenses[item.key] > 0)
-
+      ].filter(item => Number(profileData.monthlyExpenses?.[item.key] || 0) > 0)
       try {
         const fixedResponse = await axios.get(
           'https://nexora-g387.onrender.com/api/fixed-expenses',
@@ -54,7 +53,7 @@
           const payload = {
             userEmail: email,
             title: item.title,
-            amount: financialData.expenses[item.key],
+            amount: Number(profileData.monthlyExpenses?.[item.key] || 0),
             category: item.category,
             dueDay: 1
           }
